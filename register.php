@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
 }
 include 'includes/header.php';
 ?>
-<form method="POST">
+<form method="POST" id="registerForm">
     Full Name: <input type="text" name="fullname" required><br>
     Email: <input type="email" name="email" required><br>
     Password: <input type="password" name="password" required><br>
