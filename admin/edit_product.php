@@ -1,10 +1,19 @@
 <?php
-require 'includes/db.php';
+require '../includes/db.php';
 
-$id = $_GET['id'];
+$id = $_GET['id'] ?? null;
+
+if(!$id){
+    die("Invalid product ID");
+}
+
 $stmt = $conn->prepare("SELECT * FROM products WHERE id = ?");
 $stmt->execute([$id]);
 $product = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if(!$product){
+    die("Product not found");
+}
 
 if(isset($_POST['submit'])){
     $name = $_POST['name'];

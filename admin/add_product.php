@@ -1,5 +1,5 @@
 <?php
-require 'includes/db.php';
+require '../includes/db.php';
 
 if(isset($_POST['submit'])){
     $name = $_POST['name'];

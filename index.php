@@ -17,7 +17,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <div class="card-body">
                     <h5 class="card-title"><?= $product['name'] ?></h5>
                     <p class="card-text"><?= $product['description'] ?></p>
-                    <p class="card-text"><strong>$<?= number_format($product['price'], 2) ?></strong></p>
+                    <p class="card-text"><strong>dh<?= number_format($product['price'], 2) ?></strong></p>
                     <a href="cart.php?action=add&id=<?= $product['id'] ?>" class="btn btn-primary w-100">Add to Cart</a>
                 </div>
             </div>
