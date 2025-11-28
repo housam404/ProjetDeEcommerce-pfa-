@@ -8,5 +8,5 @@ if(!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin'){
 include '../includes/header.php';
 echo "<h2>Admin Dashboard</h2>";
 echo "<a href='add_product.php'>Add Product</a><br>";
-echo "<a href='products.php'>Manage Products</a><br>";
+echo "<a href='../includes/products.php'>Manage Products</a><br>";
 include '../includes/footer.php';
