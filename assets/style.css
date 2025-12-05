@@ -1,5 +1,7 @@
 body {
     background-color: #24435c;
+    color: white;
+    
 }
 
 .card {
@@ -121,3 +123,45 @@ body {
 #loginForm button:hover {
     background-color: #0056b3;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profile-container {
+    width: 450px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.profile-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.profile-card p {
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.btn.blue { background: #007bff; }
+.btn.red { background:#e63946;}
